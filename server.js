@@ -1,7 +1,7 @@
 /**
  * Created by Deus on 2017/6/7.
  */
-var app = require('express');
+var app = require('./express');
 // var bodyParser = require('body-parser');
 
 // var bodyParser = require('body-parser');
@@ -15,7 +15,7 @@ app.use(app.express.static(__dirname + '/public'));
 // ourApp(app);
 
 // require("./test/app.js")(app);
-require("./project/test/app");
+require("./public/test/app");
 // require('./public/app.js')();
 // don't know need it or not
 var port = process.env.PORT || 3000;

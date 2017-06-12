@@ -1,13 +1,13 @@
 (function () {
     angular
-        .module('WAM')
+        .module('testMod')
         .config(configuration);
 
     function configuration($routeProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: 'index.html',
-                controller: 'controller',
+                templateUrl: 'views/button.html',
+                controller: 'testController',
                 controllerAs: 'model'
             })
     }
